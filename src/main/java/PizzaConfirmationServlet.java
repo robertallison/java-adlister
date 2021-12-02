@@ -4,9 +4,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "HelloWorldServlet", urlPatterns = "/hi")
-public class HelloWorldServlet extends HttpServlet {
+@WebServlet(name = "PizzaConfirmationServlet", urlPatterns = "/thx")
+public class PizzaConfirmationServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.getWriter().println("<h1>Hello, World!</h1>");
+        response.getWriter().println("Thank you for your order! Please check your email for your order confirmation.");
     }
 }
